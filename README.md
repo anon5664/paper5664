@@ -16,7 +16,7 @@ Other supplemental materials
 
 ## GIFs
 
-These GIFs show example predictions from ScribblePrompt-UNet on test examples from evaluation dataset unseen during training.
+These GIFs show example predictions from ScribblePrompt-UNet on test examples from evaluation datasets unseen during training.
 
 ![](https://github.com/anon5664/paper5664/blob/main/gifs/total_segmentator.gif)
 ![](https://github.com/anon5664/paper5664/blob/main/gifs/wbc.gif)
