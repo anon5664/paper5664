@@ -1,11 +1,11 @@
 
 # MedScribble
 
-We collected a dataset (`MedScribble`) of manual scribbles from three annotators for seven segmentation tasks. The dataset contains a total of 31 2D image-segmentation pairs with 3 sets of scribble annotations for each image-segmentation pair. For each segmentation task (i.e., dataset/label combination) the annotators were shown five training examples with the ground truth segmentation per task and instructed to draw positive and negative scribbles to indicate the region of interest on new images.
+We collected a dataset (`MedScribble`) of manual scribbles from three annotators for seven biomedical image segmentation tasks. The dataset contains a total of 31 2D image-segmentation pairs with 3 sets of scribble annotations for each image-segmentation pair. For each segmentation task (i.e., dataset/label combination) the annotators were shown 5 training examples with the ground truth segmentation per task and instructed to draw positive scribbles on the region of interest and negative scribbles on the background for 3-5 new images. Annotators drew the scribbles in a Gradio web app. Annotators 1 and 2 used an iPad with stylus and Annotator 3 used a laptop trackpad to draw scribbles. 
 
-Annotators drew the scribbles in a Gradio web app. Annotators 1 and 2 used an iPad with stylus and Annotator 3 used a laptop trackpad to draw scribbles. 
+See [tutorial.ipynb](https://github.com/anon5664/paper5664/blob/main/MedScribble/tutorial.ipynb) for a preview of the dataset.
 
-All images were padded sqaure before being resized to 256x256 and rescaled to [0,1]. For 3D datasets, we took either the middle slice (`midslice`) or slice with maximum label area (`maxslice`) as indicated by the folder name.
+We selected 7 segmentation tasks from 7 different public biomedical image segmentation datasets. See the list of data sources below for the sources of the images and ground truth segmentations. All images were padded sqaure before being resized to 256x256 and rescaled to [0,1]. For 3D datasets, we took either the middle slice (`midslice`) or slice with maximum label area (`maxslice`) as indicated by the folder name.
 
 Each example folder contains 5 files:
 ```
@@ -19,7 +19,7 @@ The scribble annotations (`scribble_X.npy`) for each annotator are stored as a 2
 
 # Data Sources
 
-See the list of data sources below for the sources of the images and segmentations. Please cite the original data sources for the images and segmentations. 
+Please cite the original data sources for the images and segmentations. 
 
 For SpineWeb, you will need to follow the instructions on the [website](http://spineweb.digitalimaginggroup.ca/Index.php?n=Main.Datasets#Dataset_7.3A_Intervertebral_Disc_Localization_and_Segmentation.3A_3D_T2-weighted_Turbo_Spin_Echo_MR_image_Database) to retrieve Dataset 7. Then perform the following processing steps for `Subject04`, `Subject13`, and `Subject14`:
 
