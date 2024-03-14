@@ -4,19 +4,19 @@ Supplemental material for anonymous paper submission #5664: "ScribblePrompt: Fas
 
 ## Contents
 
-This repository contains
+This repository contains:
 * [**GIFs**](#gifs) showing additional example segmentations
 * The [**MedScribble Dataset**](#medscribble-dataset) of manual scribble annotations
 * [**Scribble Simulation Code**](#scribble-simulation-code)
 * [**Inference Code**](#inference-code)
 
-Other supplemental materials
+Other supplemental materials:
 * **Interactive online demo**: https://huggingface.co/spaces/anon5664/ScribblePrompt
 * **Demo video**: https://youtu.be/BqWWb_X1vL4
 
-## GIFs
+# GIFs
 
-These GIFs show example predictions from ScribblePrompt-UNet on test examples from evaluation datasets unseen during training.
+These GIFs show example predictions from ScribblePrompt-UNet on test examples from evaluation datasets unseen during training. The interactions were done manually (in our interactive online demo!)
 
 ![](https://github.com/anon5664/paper5664/blob/main/gifs/total_segmentator.gif)
 ![](https://github.com/anon5664/paper5664/blob/main/gifs/wbc.gif)
@@ -25,11 +25,11 @@ These GIFs show example predictions from ScribblePrompt-UNet on test examples fr
 ![](https://github.com/anon5664/paper5664/blob/main/gifs/hipxray.gif)
 ![](https://github.com/anon5664/paper5664/blob/main/gifs/acdc.gif)
 
-## MedScribble Dataset
+# MedScribble Dataset
 
 We provide a description of the MedScribble dataset in [`MedScribble/README.md`](https://github.com/anon5664/paper5664/blob/main/MedScribble/README.md) and show a preview of the dataset in [`MedScribble/tutorial.ipynb`](https://github.com/anon5664/paper5664/blob/main/MedScribble/tutorial.ipynb)
 
-## Scribble Simulation Code
+# Scribble Simulation Code
 
 We provide scribble simulation code in [`scribbleprompt/scribbles.py`](https://github.com/anon5664/paper5664/blob/main/scribbleprompt/scribbles.py). To generate scribbles, run
 
@@ -40,7 +40,7 @@ scribble_gen(mask, n_scribbles=1)
 ```
 where mask is a torch.Tensor with size (b,1,H,W) or (1,H,W) with values in [0,1].
 
-## Inference Code  
+# Inference Code  
 
 We provide checkpoints for two versions of ScribblePrompt:
 
@@ -86,6 +86,6 @@ mask, img_features, low_res_logits = sp_sam.predict(
 
 For ScribblePrompt-UNet, `mask_input` should be the logits from the previous prediction. For ScribblePrompt-SAM, `mask_input` should be `low_res_logits` from the previous prediction. 
 
-## Acknowledgements
+# Acknowledgements
 
 Code for ScribblePrompt SAM builds on [Segment Anything](https://github.com/facebookresearch/segment-anything) 
