@@ -12,7 +12,7 @@ This repository contains
 
 Other supplemental materials
 * **Interactive online demo**: https://huggingface.co/spaces/anon5664/ScribblePrompt
-* **Demo video**: https://www.youtube.com/watch?v=N5AA8JndQTk
+* **Demo video**: https://youtu.be/BqWWb_X1vL4
 
 ## GIFs
 
